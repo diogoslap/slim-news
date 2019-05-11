@@ -11,12 +11,7 @@ $configs = [
         'displayErrorDetails' => true,
     ],
 ];
-/**
- * Container Resources do Slim.
- * Aqui dentro dele vamos carregar todas as dependências
- * da nossa aplicação que vão ser consumidas durante a execução
- * da nossa API
- */
+
 $container = new \Slim\Container($configs);
 
 $container['errorHandler'] = function ($c) {
